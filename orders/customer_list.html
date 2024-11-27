@@ -1,0 +1,7 @@
+<!-- orders/templates/orders/customer_list.html -->
+<h1>Customer List</h1>
+<ul>
+    {% for customer in customers %}
+    <li>{{ customer.first_name }} {{ customer.last_name }} - {{ customer.email }}</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,7 @@
+<!-- orders/templates/orders/order_list.html -->
+<h1>Order List</h1>
+<ul>
+    {% for order in orders %}
+    <li>Order #{{ order.id }} for {{ order.customer.first_name }} {{ order.customer.last_name }} - Total: ${{ order.total_amount }}</li>
+    {% endfor %}
+</ul>
